@@ -12,6 +12,8 @@ print(f"deepseek_model: {deepseek_model.invoke('10个字介绍一下猫?').conte
 # 所以使用init_chat_mode，必须指定model和供应商。
 # 如果将某个字段设置为了configurable，不管有没有默认值，他都使用你invoke时提供的。如果你在invoke没提供时，就使用默认值
 # 所以放进configurable参数的字段，就表示他可能在运行时动态改变
+# 可以使用config_prefix参数，指定在configurable字段前的前缀，默认为configurable
+# 这样在多模型场景下，就可以区分不同模型的可配置字段了
 config_model = init_chat_model(
     model = "deepseek-chat",
     model_provider="openai",

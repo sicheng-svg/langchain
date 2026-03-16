@@ -1,6 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
-from langchain_core.output_parsers import StrOutputParser
+from langchain_core.output_parsers import JsonOutputParser
 
 # temperature 采样温度，控制生成文本的随机程度，值越大生成的文本越随机，值越小生成的文本越确定。
 # 0 完全确定，适用于需要准确答案的场景，如数学题、编程题等。
@@ -18,11 +18,11 @@ model = ChatOpenAI(
 )
 
 message = [
-    SystemMessage(content="将内容进行补全，100个字以内。"),
+    SystemMessage(content="将内容进行补全，100个字以内。并用json格式返回, 格式如下：{'content': '补全后的内容'}"),
     HumanMessage(content="一只小猫正在___?"),
 ]
 
-parser = StrOutputParser()
+parser = JsonOutputParser()
 
 chain = model | parser
 print(chain.invoke(message))
