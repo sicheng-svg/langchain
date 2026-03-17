@@ -20,6 +20,7 @@ model = ChatOpenAI(
 message = [
     HumanMessage(content="2+3等于多少? 3-2等于多少?"),
 ]
+print(f"first message: {message}")
 
 # 绑定工具
 # 绑定工具时，会给我们返回一个新的model实例，原model并没有绑定到工具，但是还可以以正常使用
@@ -32,6 +33,7 @@ modelWithTool = model.bind_tools(tools=[add, sub])
 # AIMessage
 aiMsg = modelWithTool.invoke(message)
 message.append(aiMsg)
+print(f"second message: {message}")
 
 # 这个消息的类型是ToolMessage
 # print(aiMsg.tool_calls[0]) # 模型选择了工具来处理这个问题，tool_calls里记录了模型选择的工具和工具的输入参数
@@ -40,10 +42,12 @@ while aiMsg.tool_calls:
         selected_tool = {"add": add, "sub": sub}[tool_call["name"]]
         tool_msg = selected_tool.invoke(tool_call)
         message.append(tool_msg)
+        print(f"tool message: {message}")
     
     # 把工具结果发回模型，让它继续
     aiMsg = modelWithTool.invoke(message)
     message.append(aiMsg)
+    print(f"third message: {message}")
 
 
 # 为了让模型调用工具后，将结果以及我们的问题一起返回，我们需要将这些过程中的message都记录下来，最整体发送给model
