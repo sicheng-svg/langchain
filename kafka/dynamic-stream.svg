@@ -1,0 +1,77 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        .box { fill: #161b22; stroke: #30363d; stroke-width: 1.5px; rx: 8px; }
+        .text { font-family: 'Fira Code', monospace, 'Microsoft YaHei'; font-size: 14px; fill: #c9d1d9; font-weight: bold; }
+        .date { font-family: 'Fira Code', monospace; font-size: 12px; fill: #58A6FF; }
+    </style>
+    
+    <rect width="100%" height="100%" fill="#0d1117" rx="8"/>
+    
+    <g>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-815 0" begin="0s" dur="25s" repeatCount="indefinite" />
+        
+        <g>
+            <rect x="0" y="20" width="280" height="110" class="box"/>
+<text x="15" y="50" class="date">[2026-03-17]</text>
+<text x="15" y="80" class="text">优化博客 Vercel 部署与...</text>
+<rect x="295" y="20" width="220" height="110" class="box"/>
+<text x="310" y="50" class="date">[2026-03-16]</text>
+<text x="310" y="80" class="text">CGO 中间件 Debug 完...</text>
+<rect x="530" y="20" width="260" height="110" class="box"/>
+<text x="545" y="50" class="date">[2026-03-15]</text>
+<text x="545" y="80" class="text">LeetCode 树结构算法复...</text>
+
+            <rect x="0" y="150" width="200" height="110" class="box"/>
+<text x="15" y="180" class="date">[2026-03-14]</text>
+<text x="15" y="210" class="text">测试 3X-UI 节点连通性...</text>
+<rect x="215" y="150" width="180" height="110" class="box"/>
+<image x="225" y="160" width="160" height="90" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" preserveAspectRatio="xMidYMid slice" />
+<rect x="410" y="150" width="300" height="110" class="box"/>
+<text x="425" y="180" class="date">[2026-03-12]</text>
+<text x="425" y="210" class="text">研究 Claude Code ...</text>
+
+            <rect x="0" y="280" width="300" height="110" class="box"/>
+<text x="15" y="310" class="date">[2026-03-10]</text>
+<text x="15" y="340" class="text">Redis-MongoDB 分...</text>
+<rect x="315" y="280" width="250" height="110" class="box"/>
+<text x="330" y="310" class="date">[2026-03-08]</text>
+<text x="330" y="340" class="text">整理 miHoYo 后端开发面...</text>
+<rect x="580" y="280" width="220" height="110" class="box"/>
+<text x="595" y="310" class="date">[2026-03-05]</text>
+<text x="595" y="340" class="text">看中一台成色不错的马自达 6...</text>
+
+        </g>
+        
+        <g transform="translate(815, 0)">
+            <rect x="0" y="20" width="280" height="110" class="box"/>
+<text x="15" y="50" class="date">[2026-03-17]</text>
+<text x="15" y="80" class="text">优化博客 Vercel 部署与...</text>
+<rect x="295" y="20" width="220" height="110" class="box"/>
+<text x="310" y="50" class="date">[2026-03-16]</text>
+<text x="310" y="80" class="text">CGO 中间件 Debug 完...</text>
+<rect x="530" y="20" width="260" height="110" class="box"/>
+<text x="545" y="50" class="date">[2026-03-15]</text>
+<text x="545" y="80" class="text">LeetCode 树结构算法复...</text>
+
+            <rect x="0" y="150" width="200" height="110" class="box"/>
+<text x="15" y="180" class="date">[2026-03-14]</text>
+<text x="15" y="210" class="text">测试 3X-UI 节点连通性...</text>
+<rect x="215" y="150" width="180" height="110" class="box"/>
+<image x="225" y="160" width="160" height="90" href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" preserveAspectRatio="xMidYMid slice" />
+<rect x="410" y="150" width="300" height="110" class="box"/>
+<text x="425" y="180" class="date">[2026-03-12]</text>
+<text x="425" y="210" class="text">研究 Claude Code ...</text>
+
+            <rect x="0" y="280" width="300" height="110" class="box"/>
+<text x="15" y="310" class="date">[2026-03-10]</text>
+<text x="15" y="340" class="text">Redis-MongoDB 分...</text>
+<rect x="315" y="280" width="250" height="110" class="box"/>
+<text x="330" y="310" class="date">[2026-03-08]</text>
+<text x="330" y="340" class="text">整理 miHoYo 后端开发面...</text>
+<rect x="580" y="280" width="220" height="110" class="box"/>
+<text x="595" y="310" class="date">[2026-03-05]</text>
+<text x="595" y="340" class="text">看中一台成色不错的马自达 6...</text>
+
+        </g>
+    </g>
+</svg>
