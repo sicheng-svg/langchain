@@ -63,3 +63,27 @@ while True:
     for chunk in rag_chain.stream(query):
         print(chunk, end="", flush=True)
     print("\n")
+
+from langgraph.graph import MessagesState
+from typing import TypedDict
+
+class State(MessagesState):
+    user_preference: dict # 用户偏好信息
+    user_intent: str      # 用户意图，用来让大模型智能路由
+
+    city: str # 城市​
+    budget_min: float # 最低预算​
+    budget_max: float # 最高预算​
+    district: str # 区域​
+    room_type: str # 房屋类型​
+    orientation: str # 朝向​
+    room_count: int # 推荐数量​
+    others: str # 其它要求​ 
+
+    title: str
+    phone: str
+    id: str
+
+# 推荐子图执行完后，会打印提示消息，让用户决定是否要进行预定
+class need_reserve_output(TypedDict):
+    reserve: str
